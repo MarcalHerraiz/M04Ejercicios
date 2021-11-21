@@ -1,0 +1,31 @@
+<!ELEMENT recetas (receta+)>
+<!ELEMENT receta ((nombre | categoria), infogeneral?, ingredientes, preparacion)>
+<!ATTLIST recetas autor CDATA #FIXED "Marçal Herraiz">
+<!ATTLIST receta idReceta ID #REQUIRED fechaAlta CDATA #IMPLIED)>
+<!ELEMENT nombre (#PCDATA)>
+<! ELEMENT categoria (#PCDATA | subcategoria)*> 
+<!-- <! ELEMENT categoria (#PCDATA, subcategoria)?> -->
+<!ELEMENT subcategoria (#PCDATA)>
+<!ELEMENT infogeneral (#PCDATA)>
+<!ELEMENT infogeneral (foto*, enlace, comensales, tiempo, dificultad, descripcion?)>
+<!ELEMENT foto (#PCDATA)>
+<!ELEMENT enlace (#PCDATA)>
+<!ELEMENT comensales (#PCDATA)>
+<!ELEMENT tiempo (#PCDATA)>
+<!ATTLIST tiempo unidadTiempo (minutos | horas) "minutos">
+<!ELEMENT dificultad (#PCDATA)>
+<!ELEMENT descripcion (#PCDATA)>
+<!ELEMENT ingredientes (#PCDATA)>
+<!ELEMENT ingredientes (ingrediente)>
+<!ATTLIST ingrediente cantidad CDATA #REQUIRED unidadDeMedida (gramo | taza | cucharada | cuchara | mililitro) "gramo">
+<!ELEMENT ingrediente (#PCDATA)>
+<!ELEMENT preparacion (#PCDATA)>
+<!ELEMENT preparacion (paso)>
+<!ELEMENT paso (#PCDATA)>
+<!ATTLIST paso orden IDREF #REQUIRED)>
+
+
+
+
+
+
