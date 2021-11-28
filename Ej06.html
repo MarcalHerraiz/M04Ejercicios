@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head> 
+       <meta charset="UTF-8">
+       <meta name="author" content="Marçal Herraiz">
+       <meta name="description" content="Documento HTML del ejercicio 6, una carta de Reyes">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <title>Ejercicio 6</title>
+       <link rel="icon" type="image" href="favicon.ico">
+   </head>
+   <body>
+       <main>
+           <h1>Carta de Reyes</h1>
+           <form action="index.html" method="get">
+               <textarea id="texto" name="texto" rows="30" cols="100" placeholder="Escriba aqui su carta!!"></textarea><br>
+               <p>Text length:
+                   <meter value="100" min="0" max="100" low="40" high="90" optimum="100"></meter>
+                   <!-- Esto seria un medidor de la cantidad de caracteres que el usuario introduciese en el "textarea" -->
+               </p>
+               <label for="fname">De parte de:</label><br><br>
+               <input type="text" id="Nombre" name="Nombre" placeholder="Nombre"><br><br>
+               <input type="text" id="Apellidos" name="Apellidos" placeholder="Apellidos"><br><br>
+               <input type="submit" value="Envia"> 
+            </form>   
+       </main>
+   </body>
+</html>
