@@ -1,0 +1,23 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1{
+    color: red;
+    font-family: none;
+}
+h2{
+    color: gray;
+    text-decoration: underline;
+}
+span{
+    color: orangered;
+}
+p{
+    font-style: italic;
+}
+ul{
+    list-style: upper-roman;
+}
+ol{
+    list-style: upper-roman;
+}

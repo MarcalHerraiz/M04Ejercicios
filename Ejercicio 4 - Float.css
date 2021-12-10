@@ -1,0 +1,13 @@
+div {
+    background-color: lightgreen;
+    width: 12rem;
+    height: 150px;
+    color: black;
+  }
+ 
+.figure1{
+    float: left;
+}
+.figure3{
+    float: right;
+}
